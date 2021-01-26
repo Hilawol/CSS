@@ -1,0 +1,20 @@
+#card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  max-width:  380px;
+  margin: 0 auto;
+  background-color: cornsilk;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#headers{
+  text-align: center;
+}
+
+#content{
+  height: 180px;
+}
