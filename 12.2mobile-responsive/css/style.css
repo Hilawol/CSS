@@ -1,0 +1,31 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.page{
+  height:100vh;
+  width:100vw;
+}
+.container{
+  border:1px solid black;
+  margin:auto;
+  height:100%;
+  text-align: left;
+}
+
+.box{
+  background-color: lavenderblush;
+  border:1px solid black;
+  padding:10px;
+  margin:5px;
+  float:left;
+  width:20%;
+}
+
+@media (max-width: 600px){
+  .box{
+    width:100%;
+  }
+}
