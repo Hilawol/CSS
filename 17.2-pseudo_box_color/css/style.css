@@ -1,0 +1,20 @@
+.box{
+  position: relative;
+  background-color: coral;
+  width:300px;
+  height:300px;
+  margin: 50px;
+  text-align: right;
+}
+
+.box::before{
+  content:"Overlay Box";
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:cornflowerblue ;
+  width:50%;
+  height:100%;
+  z-index: 100;
+  text-align: left;
+}

@@ -1,0 +1,10 @@
+
+a{
+  text-decoration: none;
+  color:blueviolet;
+}
+
+.google::after{
+  content:"(www.google.com)";
+  color:blueviolet;
+}
