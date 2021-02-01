@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+html{
+  font-size: 10px;
+}
+
+img{
+  display:block;
+  margin:auto;
+}
+
+p{
+  font-family: "quicksand-light";
+  font-size:1.8rem;
+}
+
+/* Colors */
+.bgcolor {background-color:#d6c9be; } 
+.forecolor {color:#d6c9be; }
+.bordercolor {border:3px solid #d6c9be; }
+
+/* Fonts */
+
+@font-face {
+  font-family: "quicksand-light";
+  src: url(../fonts/Quicksand-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quicksand-medium";
+  src: url(../fonts/Quicksand-SemiBold.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Utility */
+
+.bold-font{
+  font-family: "quicksand-medium";
+}
+
+.light-font{
+  font-family:"quicksand-light";
+}
+
+.donw{
+  height:2rem;
+  width:2rem;
+}
+
+/* Media queries */
+
+@media (max-width:600px){
+  .header-container,
+  .nav-container{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-box, .logo{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+/* General */
+
+#landing{
+  background: url("https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-title{
+  font-size: 3.5rem;
+  color:#543B2A;
+  text-align: center;
+  margin:auto;
+  padding-top: 100px;
+}
+
+.landing-title>a{
+  font-family: "quicksand-light";
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 1.8rem;
+  display: block;
+}
+
+.landing-title>a:hover{
+  cursor: pointer;
+}
+
+#page1{
+  height:100vh;
+}
+
+.header-container{
+  background-color: #c0b4ab;
+  display:flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  height:5rem;
+}
+
+.nav-container{
+  display:flex;
+  flex-flow: row;
+}
+
+.logo{
+  font-family:"quicksand-medium";
+  margin: 0 2rem;
+  font-size: 1.4rem;
+}
+
+.nav-container{
+  list-style: none;
+  display:flex;
+  width:max-content;
+}
+
+.nav-container li:hover{
+  cursor: pointer;
+}
+
+.nav-box{
+  height:100%;
+  padding: 0 1rem;
+  color:#FFF;
+  font-size: 1.3rem;
+  font-family:"quicksand-light";
+}
+
+.nav-box:hover{
+  font-family:"quicksand-medium";
+  font-size: 1.4rem;
+}
+
+#about-us{
+  border:1px solid black;
+  width:60%;
+  margin:30px auto;
+  padding:30px;
+}
+
+
+
