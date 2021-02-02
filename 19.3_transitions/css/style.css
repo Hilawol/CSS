@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+  body {
+    height:100vh;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    border:2px solid black;
+    width:120px;
+    height:40px;
+    margin:20px;
+    overflow: hidden;
+  }
+
+  .box1::after{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    top:-100%;
+    left:0;
+    transition-duration: 1s;
+    transition-property: all;
+  }
+
+  .box1:hover::after{
+    content:"YEAH!";
+    visibility:visible;
+    background-color: coral;
+    top:0;
+  }
+
+  .box2::after{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    top:0;
+    left:-100%;
+    transition-duration: 2s;
+    transition-property: all;
+  }
+
+  .box2:hover::after{
+    content:"";
+    background-color: black;
+    color:white;
+    left:0;
+    top:0;
+    z-index:-100;
+  }
+
+  .box2{
+    transition-duration: 2s;
+    transition-property: all;
+  }
+
+  .box2:hover{
+    color:white;
+  }
+
+  .box3::after{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    content:"";
+    background-color:yellow;
+    width:100%;
+    height:100%;
+    transform: rotate(-90deg);
+    top:-80px;
+    left:-33%;
+    transition-duration: 1s;
+    transition-property: all;
+  }
+
+  .box3:hover::after{
+    content:"";
+    transform: rotate(0);
+    top:0;
+    left:0;
+    z-index: -100;
+  }
+
+  .box4::after{
+    overflow:visible;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    content:"Scale & Opacity";
+    width:100%;
+    height:100%;
+    background-color: black;
+    color:white;
+    transform:scale(3);
+    font-size: 15px ;
+    top:0;
+    left:0;
+    opacity:0;
+    transition-duration: 1s;
+    transition-property: all;
+  }
+
+  .box4:hover::after{
+   
+    color:white;
+    background-color: black;
+    content:"Scale & Opacity";
+    transform:scale(1);
+    opacity: 1;
+    top:0;
+    left:0;
+  
+  }
